@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Music, Mic2, Users, Mail, Globe, MessageCircle } from "lucide-react";
+import Image from "next/image";
+
 
 export default function CarnaticAcademyWebsite() {
   return (
@@ -32,17 +34,35 @@ export default function CarnaticAcademyWebsite() {
         </div>
       </motion.section>
 
-      {/* Founder Section */}
-      <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="max-w-4xl mx-auto">
-        <Card className="rounded-2xl shadow-md">
-          <CardContent className="p-6 text-center space-y-3">
-            <h2 className="text-2xl font-semibold">Founded by Swathi Sathyanarayana</h2>
-            <p className="text-slate-600">
-              A passionate Carnatic music educator dedicated to preserving tradition while making learning joyful, structured, and accessible.
-            </p>
-          </CardContent>
-        </Card>
-      </motion.section>
+{/* Founder Section */}
+<motion.section
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.1 }}
+  className="max-w-4xl mx-auto"
+>
+  <Card className="rounded-2xl shadow-md">
+    <CardContent className="p-6 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+      
+      <Image
+        src="/images/founder.jpg"
+        alt="Swathi Sathyanarayana - Founder of Swara Carnatic Music Academy"
+        width={160}
+        height={160}
+        className="rounded-full object-cover shadow-md"
+      />
+
+      <div className="space-y-2">
+        <h2 className="text-2xl font-semibold">Founded by Swathi Sathyanarayana</h2>
+        <p className="text-slate-600">
+          A passionate Carnatic music educator dedicated to preserving tradition while making learning joyful, structured, and accessible for students worldwide.
+        </p>
+      </div>
+
+    </CardContent>
+  </Card>
+</motion.section>
+
 
       {/* About Section */}
       <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="max-w-4xl mx-auto">
