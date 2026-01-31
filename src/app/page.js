@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Music, Mic2, Users, Mail, Globe, Star } from "lucide-react";
+import { Music, Mic2, Users, Mail, Globe, Star, MessageCircle } from "lucide-react";
 
 export default function CarnaticAcademyWebsite() {
   return (
@@ -15,7 +15,17 @@ export default function CarnaticAcademyWebsite() {
           Learn authentic Carnatic vocal music through structured online Carnatic music classes for kids and adults worldwide.
         </p>
         <div className="flex justify-center gap-3 flex-wrap">
-          <Button className="rounded-2xl px-6 py-2 text-base">Enroll Now</Button>
+          <a
+  href="https://wa.me/1234567890"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="rounded-2xl px-6 py-2 text-base flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white">
+    <MessageCircle className="w-5 h-5" />
+    Enroll via WhatsApp
+  </Button>
+</a>
+
           <Button variant="outline" className="rounded-2xl px-6 py-2 text-base flex items-center gap-2">
             <Globe className="w-4 h-4" /> Online Classes Worldwide
           </Button>
@@ -93,7 +103,17 @@ export default function CarnaticAcademyWebsite() {
             <Mail className="w-8 h-8 mx-auto" />
             <h2 className="text-2xl font-semibold">Enrollment Open Worldwide</h2>
             <p className="text-slate-600">Email: swathids013@email.com</p>
-            <Button className="rounded-2xl w-full">Book a Free Trial Class</Button>
+            <a
+  href="https://wa.me/15488871801" 
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="rounded-2xl w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white">
+    <MessageCircle className="w-5 h-5" />
+    Chat on WhatsApp to Book Trial
+  </Button>
+</a>
+
           </CardContent>
         </Card>
       </motion.section>
