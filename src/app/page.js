@@ -68,15 +68,6 @@ export default function CarnaticAcademyWebsite() {
           </CardContent>
         </Card>
 
-        <Card className="rounded-2xl shadow-md">
-          <CardContent className="p-6 space-y-3 text-center">
-            <Music className="w-8 h-8 mx-auto" />
-            <h3 className="text-xl font-semibold">Advanced Level</h3>
-            <p className="text-sm text-slate-600">Kritis, Raga alapana, Neraval, Kalpana swaras, concert preparation.</p>
-          </CardContent>
-        </Card>
-      </motion.section>
-
       {/* Why Choose Us */}
       <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} className="max-w-4xl mx-auto">
         <Card className="rounded-2xl shadow-md">
@@ -100,7 +91,7 @@ export default function CarnaticAcademyWebsite() {
             <Mail className="w-8 h-8 mx-auto" />
             <h2 className="text-2xl font-semibold">Enrollment Open Worldwide</h2>
             <p className="text-slate-600">Online classes available across time zones.</p>
-            <p className="text-slate-600">Email: svaracarnaticacademy@email.com</p>
+            <p className="text-slate-600">Email: swathids013@email.com</p>
             <Button className="rounded-2xl w-full">Book a Free Trial Class</Button>
           </CardContent>
         </Card>
