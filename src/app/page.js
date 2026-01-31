@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Music, Mic2, Users, Mail, Globe, Star, MessageCircle } from "lucide-react";
+import { Music, Mic2, Users, Mail, Globe, MessageCircle } from "lucide-react";
 
 export default function CarnaticAcademyWebsite() {
   return (
@@ -58,7 +58,7 @@ export default function CarnaticAcademyWebsite() {
       </motion.section>
 
       {/* Courses Section */}
-      <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} className="grid md:grid-cols-3 gap-6">
+      <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} className="grid md:grid-cols-2 gap-6">
         <Card className="rounded-2xl shadow-md">
           <CardContent className="p-6 text-center space-y-3">
             <Users className="w-8 h-8 mx-auto" />
@@ -75,13 +75,7 @@ export default function CarnaticAcademyWebsite() {
           </CardContent>
         </Card>
 
-        <Card className="rounded-2xl shadow-md">
-          <CardContent className="p-6 text-center space-y-3">
-            <Star className="w-8 h-8 mx-auto" />
-            <h3 className="text-xl font-semibold">Advanced Level</h3>
-            <p className="text-sm text-slate-600">Kritis, ragam-tanam, alapana, kalpana swaras, stage performance training.</p>
-          </CardContent>
-        </Card>
+
       </motion.section>
 
       {/* Why Choose Us */}
