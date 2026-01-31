@@ -16,7 +16,7 @@ export default function CarnaticAcademyWebsite() {
         </p>
         <div className="flex justify-center gap-3 flex-wrap">
           <a
-  href="https://wa.me/1234567890"
+  href="https://wa.me/15488871801"
   target="_blank"
   rel="noopener noreferrer"
 >
@@ -102,7 +102,7 @@ export default function CarnaticAcademyWebsite() {
           <CardContent className="p-6 space-y-3">
             <Mail className="w-8 h-8 mx-auto" />
             <h2 className="text-2xl font-semibold">Enrollment Open Worldwide</h2>
-            <p className="text-slate-600">Email: swathids013@email.com</p>
+            <p className="text-slate-600">Email: swathids013@gmail.com</p>
             <a
   href="https://wa.me/15488871801" 
   target="_blank"
