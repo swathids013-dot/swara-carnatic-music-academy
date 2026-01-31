@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Music, Mic2, Users, Mail, Globe, MessageCircle } from "lucide-react";
 import Image from "next/image";
+import { CalendarCheck } from "lucide-react";
 
 
 export default function CarnaticAcademyWebsite() {
@@ -109,6 +110,34 @@ export default function CarnaticAcademyWebsite() {
           </CardContent>
         </Card>
       </motion.section>
+{/* Free Intro Session Booking */}
+<motion.section
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.45 }}
+  className="max-w-4xl mx-auto"
+>
+  <Card className="rounded-2xl shadow-md bg-gradient-to-r from-amber-50 to-orange-100">
+    <CardContent className="p-8 text-center space-y-4">
+      <CalendarCheck className="w-10 h-10 mx-auto text-orange-600" />
+      <h2 className="text-2xl font-semibold">Book a Free 15-Minute Intro Session</h2>
+      <p className="text-slate-700">
+        Meet the teacher, understand the curriculum, and experience Carnatic music learning live on Google Meet.
+      </p>
+
+      <a
+        href="https://calendar.app.google/quZrLYWHdDeMQgf18"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button className="rounded-2xl px-6 py-3 text-base bg-orange-600 hover:bg-orange-700 text-white flex items-center gap-2">
+          <CalendarCheck className="w-5 h-5" />
+          Schedule on Google Meet
+        </Button>
+      </a>
+    </CardContent>
+  </Card>
+</motion.section>
 
       {/* Contact */}
       <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-center">
